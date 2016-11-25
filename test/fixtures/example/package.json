@@ -1,0 +1,8 @@
+{
+  "name": "fixture",
+  "version": "0.0.1",
+  "dependencies": {
+    "pawn-module": "^0.0.1",
+    "other-module": "^0.0.1"
+  }
+}
