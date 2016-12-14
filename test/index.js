@@ -173,7 +173,7 @@ describe('Pawn', function () {
 
       proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output.length, 2);
+        assert.equal(output.length, 3);
         assert.equal(output[0], 'local\n');
         done();
       });
@@ -190,7 +190,7 @@ describe('Pawn', function () {
 
       proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output.length, 2);
+        assert.equal(output.length, 3);
         assert.equal(output[0], 'global\n');
 
         fs.copySync(tmpPath, srcPath);
@@ -208,6 +208,17 @@ describe('Pawn', function () {
       proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
         assert.equal(output[1], exampleRoot + '\n');
+        done();
+      });
+    });
+
+    it('Should pass "non-option" args to execute method.', function (done) {
+      const proc = spawn('pawn', ['non', 'option']);
+      let output = [];
+
+      proc.stdout.on('data', (data) =>  output.push(data.toString()));
+      proc.on('exit', () => {
+        assert.equal(output[2], `[ 'non', 'option' ]\n`);
         done();
       });
     });

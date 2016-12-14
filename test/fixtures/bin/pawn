@@ -15,9 +15,10 @@ const Pawn = require('../../../lib/index.js');
 
 module.exports = new Pawn('pawn', {
 
-  execute: function () {
+  execute: function (session) {
     console.log('global');
     console.log(process.cwd());
+    console.log(session.args);
   }
 
 });
