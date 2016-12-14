@@ -169,11 +169,12 @@ describe('Pawn', function () {
 
     it('Should execute locally installed program.', function (done) {
       const proc = spawn('pawn');
-      let output;
+      let output = [];
 
-      proc.stdout.on('data', (data) =>  output = data.toString());
+      proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output, 'local');
+        assert.equal(output.length, 1);
+        assert.equal(output[0], 'local');
         done();
       });
     });
@@ -182,14 +183,15 @@ describe('Pawn', function () {
       const srcPath = 'node_modules/pawn';
       const tmpPath = 'node_modules/_pawn';
       const proc = spawn('pawn');
-      let output;
+      let output = [];
 
       fs.copySync(srcPath, tmpPath);
       fs.removeSync(srcPath);
 
-      proc.stdout.on('data', (data) =>  output = data.toString());
+      proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output, 'global');
+        assert.equal(output.length, 1);
+        assert.equal(output[0], 'global');
 
         fs.copySync(tmpPath, srcPath);
         fs.removeSync(tmpPath);
