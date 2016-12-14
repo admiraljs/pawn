@@ -173,8 +173,8 @@ describe('Pawn', function () {
 
       proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output.length, 1);
-        assert.equal(output[0], 'local');
+        assert.equal(output.length, 2);
+        assert.equal(output[0], 'local\n');
         done();
       });
     });
@@ -190,11 +190,24 @@ describe('Pawn', function () {
 
       proc.stdout.on('data', (data) =>  output.push(data.toString()));
       proc.on('exit', () => {
-        assert.equal(output.length, 1);
-        assert.equal(output[0], 'global');
+        assert.equal(output.length, 2);
+        assert.equal(output[0], 'global\n');
 
         fs.copySync(tmpPath, srcPath);
         fs.removeSync(tmpPath);
+        done();
+      });
+    });
+
+    it('Should default resolve cwd to location of configfile.', function (done) {
+      process.chdir(path.join(exampleRoot, 'node_modules'));
+
+      const proc = spawn('pawn');
+      let output = [];
+
+      proc.stdout.on('data', (data) =>  output.push(data.toString()));
+      proc.on('exit', () => {
+        assert.equal(output[1], exampleRoot + '\n');
         done();
       });
     });
