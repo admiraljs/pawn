@@ -1,6 +1,8 @@
 # Pawn
 
-[![Build Status](https://travis-ci.org/admiraljs/pawn.svg?branch=master)](https://travis-ci.org/admiraljs/pawn) [![Coverage Status](https://coveralls.io/repos/github/admiraljs/pawn/badge.svg?branch=master)](https://coveralls.io/github/admiraljs/pawn?branch=master) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![NPM pawn package](https://img.shields.io/npm/v/pawn.svg)](https://npmjs.org/package/pawn)
+[![Build Status](https://travis-ci.org/admiraljs/pawn.svg?branch=master)](https://travis-ci.org/admiraljs/pawn) [![Coverage Status](https://coveralls.io/repos/github/admiraljs/pawn/badge.svg?branch=master)](https://coveralls.io/github/admiraljs/pawn?branch=master) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+[![NPM pawn package](https://img.shields.io/npm/v/pawn.svg)](https://npmjs.org/package/pawn) [![Dependency Status](https://david-dm.org/admiraljs/pawn.svg)](https://david-dm.org/admiraljs/pawn) [![devDependency Status](https://david-dm.org/admiraljs/pawn/dev-status.svg)](https://david-dm.org/admiraljs/pawn#info=devDependencies)
 
 > Interface to aide in creating robust developer tools.
 
