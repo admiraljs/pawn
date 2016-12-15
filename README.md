@@ -1,11 +1,18 @@
-# Pawn
-
-[![Build Status](https://travis-ci.org/admiraljs/pawn.svg?branch=master)](https://travis-ci.org/admiraljs/pawn) [![Coverage Status](https://coveralls.io/repos/github/admiraljs/pawn/badge.svg?branch=master)](https://coveralls.io/github/admiraljs/pawn?branch=master) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-
-[![NPM pawn package](https://img.shields.io/npm/v/pawn.svg)](https://npmjs.org/package/pawn) [![Dependency Status](https://david-dm.org/admiraljs/pawn.svg)](https://david-dm.org/admiraljs/pawn) [![devDependency Status](https://david-dm.org/admiraljs/pawn/dev-status.svg)](https://david-dm.org/admiraljs/pawn#info=devDependencies)
-
-> Interface to aide in creating robust developer tools.
-
+<h1 align="center">Pawn</h1>
+<div align="center">
+  <p>Interface to aide in creating robust developer tools.</p>
+  <div>
+  <a href="https://travis-ci.org/admiraljs/pawn"><img src="https://travis-ci.org/admiraljs/pawn.svg?branch=master" alt="Build Status"></a>
+  <a href="https://coveralls.io/github/admiraljs/pawn?branch=master"><img src="https://coveralls.io/repos/github/admiraljs/pawn/badge.svg?branch=master" alt="Coverage Status"></a>
+  <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
+  </div>
+  <div>
+  <a href="https://npmjs.org/package/pawn"><img src="https://img.shields.io/npm/v/pawn.svg" alt="NPM pawn package"></a>
+  <a href="https://david-dm.org/admiraljs/pawn"><img src="https://david-dm.org/admiraljs/pawn.svg" alt="Dependency Status"></a>
+  <a href="https://david-dm.org/admiraljs/pawn#info=devDependencies"><img src="https://david-dm.org/admiraljs/pawn/dev-status.svg" alt="devDependency Status"></a>
+  </div>
+</div>
+<br>
 
 ### Example Usage
 
