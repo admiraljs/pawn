@@ -2,7 +2,7 @@
   "name": "pawn",
   "description": "Interface to aide in creating robust developer tools.",
   "author": "Jarid Margolin <jaridmargolin@gmail.com>",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/jaridmargolin/pawn",
   "license": "MIT",
   "repository": {
@@ -25,6 +25,7 @@
     "liftoff": "^2.3.0",
     "load-plugins": "^2.1.2",
     "lodash": "^4.15.0",
+    "v8flags": "^2.0.11",
     "yargs": "^6.4.0"
   },
   "devDependencies": {
