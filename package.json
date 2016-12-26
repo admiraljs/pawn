@@ -25,6 +25,7 @@
     "liftoff": "^2.3.0",
     "load-plugins": "^2.1.2",
     "lodash": "^4.15.0",
+    "v8flags": "^2.0.11",
     "yargs": "^6.4.0"
   },
   "devDependencies": {
