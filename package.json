@@ -35,6 +35,6 @@
     "inspect-process": "^0.4.1",
     "mocha": "^3.1.2",
     "nyc": "^10.0.0",
-    "standard": "^8.6.0"
+    "standard": "^9.0.2"
   }
 }
