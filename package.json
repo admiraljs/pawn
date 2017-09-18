@@ -26,7 +26,7 @@
     "load-plugins": "^2.1.2",
     "lodash": "^4.15.0",
     "v8flags": "^3.0.0",
-    "yargs": "^8.0.1"
+    "yargs": "^9.0.1"
   },
   "devDependencies": {
     "chai": "^4.0.2",
