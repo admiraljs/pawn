@@ -21,7 +21,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "chalk": "^2.3.0",
-    "dargs": "^6.0.0",
+    "dargs": "^8.0.0",
     "liftoff": "^3.0.0",
     "load-plugins": "^2.1.2",
     "lodash": "^4.17.4",
